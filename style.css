@@ -59,6 +59,7 @@ button {
     height: 21px;
     width: 30px;
     z-index: 50;
+    margin-left: 10px;
 }
 .burger span {
     height: 3px;
@@ -263,7 +264,17 @@ button {
     }
     .part3{
         padding: 15px 0px 45px 0px;
-    } 
+    }
+    .content{
+        font-size: 18px;
+    }
+    .sign-up{
+        font-size: 22px;
+    }
+    .sign-glam{
+        padding-top: 2%;
+        font-size: 18px;
+    }
 }
 @media screen and (max-width: 350px){
     .logo-title{
