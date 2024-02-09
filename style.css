@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background: #A8AC8F;
+}
+.container{
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    width: 75px;
+    height: 75px;
+    margin: 8px;
+}
+.logo-title{
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+.menu-list{
+    display: flex;
+    gap: 60px;
+    list-style: none;
+}
+.menu-link{
+    text-decoration: none;
+    font-size: 15px;
+    outline: none;
+    font-family: 'Noto Serif', serif;
+    color: black;
+}
+.menu-item{
+    transition: 0.3s;
+    text-align: center;
+}
+.menu-item:hover {
+    transform: scale(1.1);  
+}
+button {
+    background: none;
+    border: none;
+}
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    width: 30px;
+    z-index: 50;
+}
+.burger span {
+    height: 3px;
+    width: 100%;
+    background: rgb(36, 36, 36);
+    border-radius: 5px;
+}
+.container-for-part{
+    display: flex;
+}
+.part1{
+    background-color: #6c4953;
+    flex-basis: 50%;
+
+}
+.novost{
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8%;
+}
+.img-novost{
+    width: 200px;
+}
+.novost-text{
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.novost-text:hover{
+    color:#3b3b3b;
+}
+.part2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    flex-shrink: 0;
+    flex-grow: 0;
+} 
+.part-img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(75%);
+    position: relative;
+    object-fit: cover;
+}
+.part2-text{
+    max-width: 100%;
+    font-family: 'Playfair Display', serif;
+    color: whitesmoke;
+    font-size: 80px;
+    text-align: center;
+    z-index: 50;
+    position: absolute;
+}
+.couture{
+    width: 100%;
+    height: 95px;
+    background-color: #4d5238;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part3-bg{
+    width: 100%;
+    height: auto;
+    background-color: #b38995;
+}
+.part3{
+    padding: 75px 0px;
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.card{
+    width: 22%;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+}
+.part3-img{
+    width: 100%;
+    height: auto;
+    transition: all .15s linear;
+}
+.card:hover .part3-img{
+    filter: opacity(5%);
+}
+.content{
+    width: 100%;
+    height: auto;
+    top: 8%;
+    transform: translateY(27px);
+    opacity: 0;
+    transition: all .15s linear;
+    position: absolute;
+    text-align: left;
+    font-size: 27px;
+    font-weight: bold;
+    color: #0f3224;
+    font-family: 'Montserrat', sans-serif;
+}
+.card:hover .content{
+    transform: translateY(0);
+    opacity: 1;
+}
+.part4{
+    background-color: #421321;
+}
+.part4{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.sign-up, .sign-glam{
+    color: whitesmoke;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.sign-up{
+    font-size: 27px;
+}
+.sign-glam{
+    padding-top: 2%;
+    font-size: 20px;
+}
+@media (min-width: 768px) {
+    .burger {
+        display: none;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .part2{
+        justify-content: left;
+    }
+    .part2-text{
+        font-size: 50px;
+        max-width: 70%;
+    }
+    .novost{
+        flex-direction: column;
+        padding: 10px 100px;
+    }
+    .container{
+        max-width: 1000px;
+    }
+    .novost-text{
+        padding-top: 8%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .part1{
+        flex-basis: auto;
+        flex-shrink: 0;
+        flex-grow: 0;
+    }
+    .part2{
+        justify-content: center;
+        flex-basis: auto;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+    .container-for-part{
+        flex-direction: column;
+    }
+    .menu{
+        display: none;
+    }
+    .part2-text{
+        margin-left: 0;
+        font-size: 37px;
+        text-align: center;
+        max-width: 70%;
+    }
+    .novost{
+        padding: 30px 80px;
+    }
+    .part-img{
+        height: auto;
+        width: 100%;
+    }
+    .logo-title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .couture{
+        font-size: 30px;
+    }
+    .card{
+        padding-top: 8%;
+        width: 44%;
+    }
+    .part3{
+        padding: 15px 0px 45px 0px;
+    } 
+}
+@media screen and (max-width: 350px){
+    .logo-title{
+        font-size: 14px;
+    }
+    .logo-img{
+        margin: 5px;
+        width: 35px;
+        height: auto;
+    }
+    .burger {
+        height: 18px;
+        width: 25px;
+    }
+    .burger span {
+        height: 2px;
+    }
+    .novost{
+        padding: 15px 10px;
+    }
+    .img-novost{
+        width: 140px;
+    }
+    .novost-text{
+        font-size: 13px;
+        text-align: center;
+    }
+    .part2-text{
+        font-size: 20px;
+    }
+    .couture{
+        text-align: center;
+    }
+    .card{
+        padding-top: 8%;
+        width: 88%;
+        display: flex;
+        justify-content: center;
+    }
+    .content{
+        top: 20%;
+        transform: translateY(15px);
+        position: absolute;
+        font-size: 15px;
+    }
+    .part3{
+        display: flex;
+        flex-direction: column;
+    }
+    .sign-up{
+        font-size: 13px;
+    }
+    .sign-glam{
+        padding-top: 2%;
+        font-size: 9px;
+    }
+    .couture{
+        font-size: 20px;
+        height: 60px;
+    }
+    .part4{
+        height: 100px;
+    }
+}
+
