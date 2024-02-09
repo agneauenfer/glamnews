@@ -219,6 +219,10 @@ button {
     .novost-text{
         padding-top: 8%;
     }
+    .content{
+        transform: translateY(23px);
+        font-size: 23px
+    }
 }
 @media screen and (max-width: 768px) {
     .part1{
