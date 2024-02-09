@@ -267,6 +267,7 @@ button {
     }
     .content{
         font-size: 18px;
+        transform: translateY(18px);
     }
     .sign-up{
         font-size: 22px;
@@ -316,9 +317,9 @@ button {
     }
     .content{
         top: 20%;
-        transform: translateY(15px);
+        transform: translateY(12px);
         position: absolute;
-        font-size: 15px;
+        font-size: 12px;
     }
     .part3{
         display: flex;
